@@ -1,19 +1,66 @@
-This directory includes a few sample datasets to get you started.
+# Job Market Skill Radar 📊
 
-*   `california_housing_data*.csv` is California housing data from the 1990 US
-    Census; more information is available at:
-    https://docs.google.com/document/d/e/2PACX-1vRhYtsvc5eOR2FWNCwaBiKL6suIOrxJig8LcSBbmCbyYsayia_DvPOOBlXZ4CAlQ5nlDD8kTaIDRwrN/pub
+## Project Overview
 
-*   `mnist_*.csv` is a small sample of the
-    [MNIST database](https://en.wikipedia.org/wiki/MNIST_database), which is
-    described at: http://yann.lecun.com/exdb/mnist/
+Job Market Skill Radar is a data analysis project that investigates the technical skills mentioned in job postings for Data Analyst, Data Scientist, and Business Analyst roles.
 
-*   `anscombe.json` contains a copy of
-    [Anscombe's quartet](https://en.wikipedia.org/wiki/Anscombe%27s_quartet); it
-    was originally described in
+The goal is to understand skill demand, compare job roles, and help beginners identify useful learning priorities based on job-posting evidence.
 
-    Anscombe, F. J. (1973). 'Graphs in Statistical Analysis'. American
-    Statistician. 27 (1): 17-21. JSTOR 2682899.
+## Objectives
 
-    and our copy was prepared by the
-    [vega_datasets library](https://github.com/altair-viz/vega_datasets/blob/4f67bdaad10f45e3549984e17e1b3088c731503d/vega_datasets/_data/anscombe.json).
+- Identify frequently mentioned technical skills.
+- Compare skill requirements across job roles.
+- Visualize skill demand using charts and heatmaps.
+- Build a simple personal skill gap analyzer.
+- Extend the analysis into machine learning.
+
+## Tools and Technologies
+
+- Python
+- Pandas
+- Matplotlib
+- Seaborn
+- Regular expressions
+- Google Colab
+
+## Dataset
+
+This project initially uses a historical Glassdoor data science job-postings dataset.
+
+Source: https://github.com/PlayingNumbers/ds_salary_proj
+
+The dataset is a historical snapshot and does not represent current job-market demand. Findings will be interpreted within the limitations of the available sample.
+
+## Methodology
+
+1. Load and inspect the dataset.
+2. Clean missing values and duplicate records.
+3. Categorize selected job titles.
+4. Extract skill mentions from job descriptions.
+5. Calculate skill frequencies and percentages.
+6. Compare skills across job roles.
+7. Visualize results and document findings.
+
+## Visualizations
+
+Planned visualizations include:
+
+- Overall skill-demand ranking
+- Skill comparison heatmap by job role
+- Personal skill gap analysis
+
+## Future Improvements
+
+- Add more recent job-posting data from authorized sources.
+- Improve skill extraction using natural language processing.
+- Build an interactive dashboard.
+- Train and evaluate a job-role classification model.
+- Explore skill demand over time when suitable historical data is available.
+
+## Limitations
+
+Keyword matching can miss synonyms, context, and skills mentioned in negative statements. Job titles may also be classified incorrectly. Results describe the analyzed dataset and should not be treated as definitive measures of the entire job market.
+
+## Author
+
+Created as a learning project to develop practical Data Analytics and Data Science skills.
